@@ -17,6 +17,18 @@
       "name": "mc restaurant",
       "address": "Lahore",
       "email": "mc@gmail.com"
+    },
+    {
+      "name": "sasas",
+      "email": "sasasa@gmail.com",
+      "address": "sassa",
+      "id": 4
+    },
+    {
+      "name": "sasas",
+      "email": "sasasa@gmail.com",
+      "address": "sassa",
+      "id": 5
     }
   ]
 }
