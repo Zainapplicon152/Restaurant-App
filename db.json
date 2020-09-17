@@ -1,0 +1,22 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Malik restaurant",
+      "address": "Lahore",
+      "email": "malik@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "KFC restaurant",
+      "address": "Lahore",
+      "email": "kfc@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "mc restaurant",
+      "address": "Lahore",
+      "email": "mc@gmail.com"
+    }
+  ]
+}
