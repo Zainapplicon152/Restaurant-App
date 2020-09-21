@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {RestoService} from "../resto.service";
+import {RestoService} from '../resto.service';
 
 @Component({
   selector: 'app-list-resto',
@@ -7,7 +7,7 @@ import {RestoService} from "../resto.service";
   styleUrls: ['./list-resto.component.scss']
 })
 export class ListRestoComponent implements OnInit {
-  collection: Object = [];
+  collection: any = [];
 
   constructor(private resto: RestoService) {
   }
@@ -19,4 +19,14 @@ export class ListRestoComponent implements OnInit {
     });
   }
 
+  // tslint:disable-next-line:typedef
+  deleteResto(id) {
+    // console.warn(id);
+    console.warn(this.collection);
+    this.collection.splice(this.collection.findIndex(x => x.id === id), 1);
+    this.resto.deleteResto(id).subscribe((result) => {
+      console.warn(result);
+    });
+
+  }
 }

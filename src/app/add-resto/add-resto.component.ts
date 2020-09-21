@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import {RestoService} from "../resto.service";
+import {FormControl, FormGroup} from '@angular/forms';
+import {RestoService} from '../resto.service';
 
 @Component({
   selector: 'app-add-resto',
@@ -12,11 +12,13 @@ export class AddRestoComponent implements OnInit {
   constructor(private resto: RestoService) {
   }
 
+  alert: boolean = false;
+
   addResto = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
     address: new FormControl('')
-  })
+  });
 
   ngOnInit(): void {
   }
@@ -24,6 +26,13 @@ export class AddRestoComponent implements OnInit {
   collectData() {
     this.resto.saveResto(this.addResto.value).subscribe((result) => {
       console.warn(result);
-    })
+      this.alert = true;
+    });
+    this.addResto.reset({});
+  }
+
+  closeAlert() {
+    this.alert = false;
+
   }
 }
