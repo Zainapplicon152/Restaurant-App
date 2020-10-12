@@ -1,3 +1,22 @@
 {
-  "restaurants": []
+  "restaurants": [
+    {
+      "name": "sdasassasasas",
+      "email": "sassasa",
+      "address": "sassassasaslahore",
+      "id": 1
+    },
+    {
+      "name": "saaaaaaaaaaaaaaaaaaaaaa",
+      "email": "aaaaaaaaaaaaaaaaaaaaa",
+      "address": "lahore",
+      "id": 2
+    },
+    {
+      "name": "asaasasasasas",
+      "email": "asasasasasas",
+      "address": "asaasaaassas",
+      "id": 3
+    }
+  ]
 }

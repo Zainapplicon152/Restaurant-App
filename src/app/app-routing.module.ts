@@ -12,7 +12,7 @@ const routes: Routes = [
     component: AddRestoComponent
   },
   {
-    path: 'Update',
+    path: 'update/:id',
     component: UpdateRestoComponent
   },
   {

@@ -21,4 +21,12 @@ export class RestoService {
   deleteResto(id) {
     return this.http.delete(`${(this.url)}/${id}`);
   }
+
+  editResto(id) {
+    return this.http.get(`${(this.url)}/${id}`);
+  }
+
+  updateResto(id, data) {
+    return this.http.put(`${(this.url)}/${id}`, data);
+  }
 }
